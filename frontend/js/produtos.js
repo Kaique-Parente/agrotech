@@ -11,7 +11,7 @@ export const produtos = [
     preco: 'R$ 2,40 /kg',
     prazo: 'Colhido há 2 dias · retirar até 27/10',
     urgente: false,
-    foto: 'img/lote-tomate.jpg',
+    foto: 'assets/lote-tomate.jpg',
     alt: 'Caixa de tomates italianos recém-colhidos'
   },
   {
@@ -26,7 +26,7 @@ export const produtos = [
     preco: 'Doação · retirada por conta da ONG',
     prazo: 'Retirar até 25/10 — prazo curto',
     urgente: true,
-    foto: 'img/lote-folhas.jpg',
+    foto: 'assets/lote-folhas.jpg',
     alt: 'Mix de folhas verdes e legumes em caixas de feira'
   },
   {
@@ -41,7 +41,7 @@ export const produtos = [
     preco: 'R$ 1,15 /kg',
     prazo: 'Colhido ontem · retirar até 30/10',
     urgente: false,
-    foto: 'img/lote-laranja.jpg',
+    foto: 'assets/lote-laranja.jpg',
     alt: 'Laranjas pera colhidas, em sacaria no pomar'
   },
   {
@@ -56,7 +56,7 @@ export const produtos = [
     preco: 'Doação · retirada por conta da ONG',
     prazo: 'Colhido há 3 dias · retirar até 26/10',
     urgente: false,
-    foto: 'img/lote-raiz.jpg',
+    foto: 'assets/lote-raiz.jpg',
     alt: 'Cenouras lavadas separadas em caixas após a colheita'
   }
 ];
