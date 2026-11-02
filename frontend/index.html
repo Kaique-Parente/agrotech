@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Início — AgroTech</title>
+  <meta name="description" content="A AgroTech liga quem planta a mercadinhos e ONGs aqui perto: venda direta sem atravessador e doação de alimentos sem taxa.">
+  <meta name="theme-color" content="#1E5128">
+
+  <link rel="icon" href="marca/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo sticky-top">
+    <nav class="navbar navbar-expand-lg py-2" aria-label="Navegação principal">
+      <div class="container">
+
+        <a class="marca" href="index.html">
+          <img class="marca-icone" src="marca/marca-agrotech-branco.svg" alt="">
+          <span>
+            <span class="marca-nome d-block">AgroTech</span>
+            <span class="marca-sub">por Brasil A&amp;T</span>
+          </span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#menu" aria-controls="menu" aria-label="Abrir o menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="menu" aria-labelledby="menu-titulo">
+          <div class="offcanvas-header border-bottom">
+            <h2 class="offcanvas-title marca-nome mb-0" id="menu-titulo">AgroTech</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar o menu"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav gap-lg-4 ms-lg-auto mb-3 mb-lg-0">
+              <li class="nav-item"><a class="menu-link ativo" href="index.html" aria-current="page">Início</a></li>
+              <li class="nav-item"><a class="menu-link" href="catalogo.html">Catálogo de safras</a></li>
+              <li class="nav-item"><a class="menu-link" href="publicar.html">Área do produtor</a></li>
+              <li class="nav-item"><a class="menu-link" href="sobre.html">Sobre nós</a></li>
+              <li class="nav-item"><a class="menu-link" href="contato.html">Fale conosco</a></li>
+            </ul>
+
+            <a class="botao botao-verde botao-topo" href="publicar.html">Publicar um lote</a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="capa">
+      <img class="capa-foto" src="img/hero-campo.jpg"
+           alt="Agricultora familiar segurando um caixote de hortaliças recém-colhidas na lavoura">
+      <div class="capa-veu"></div>
+
+      <div class="container capa-conteudo entra">
+        <p class="etiqueta-local mb-3">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Só aparece quem está a até 50 km de você
+        </p>
+
+        <h1 class="mb-3">Do campo direto ao comércio do seu bairro</h1>
+
+        <p class="capa-texto mb-4">
+          A AgroTech liga quem planta a mercadinhos e ONGs aqui perto. Sem atravessador,
+          com frete curto e com destino certo para a colheita que hoje se perde no galpão.
+        </p>
+
+        <div class="d-grid d-sm-flex gap-3 mb-4">
+          <a class="botao botao-branco botao-grande" href="catalogo.html">Ver safras disponíveis</a>
+          <a class="botao botao-vazado botao-grande" href="publicar.html">Sou produtor, quero anunciar</a>
+        </div>
+
+        <p class="capa-aviso mb-0">
+          Doar não custa nada, em etapa nenhuma. Esse é o nosso compromisso com quem alimenta pessoas.
+        </p>
+      </div>
+    </section>
+
+    <section class="numeros" aria-label="O tamanho do problema">
+      <div class="container">
+        <div class="numeros-caixa d-lg-flex">
+
+          <div class="numero flex-fill">
+            <span class="numero-valor">77%</span>
+            <p>dos estabelecimentos agropecuários do Brasil são de agricultura familiar</p>
+            <cite>IBGE · Censo Agropecuário 2017</cite>
+          </div>
+
+          <div class="numero flex-fill">
+            <span class="numero-valor numero-laranja">40 a 50%</span>
+            <p>das frutas e hortaliças se perdem antes de chegar à mesa do consumidor</p>
+            <cite>FAO · perdas e desperdício de alimentos</cite>
+          </div>
+
+          <div class="numero flex-fill">
+            <span class="numero-valor numero-verde">R$ 0,00</span>
+            <p>é o custo do módulo de doação para instituições sociais cadastradas</p>
+            <cite>Compromisso AgroTech · ODS 2.1</cite>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-branca">
+      <div class="container">
+
+        <h2 class="secao-titulo">Três lados que hoje não se encontram</h2>
+        <p class="secao-texto mb-4">
+          Cada um entra com o que já tem e resolve o problema do outro: quem planta vende a
+          colheita, quem revende compra fresco e perto, e quem alimenta pessoas recebe o que
+          sobrou, de graça.
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+          <div class="col">
+            <article class="publico">
+              <span class="publico-icone">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/>
+                  <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/>
+                  <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/>
+                </svg>
+              </span>
+              <h3>Pequeno produtor</h3>
+              <p>
+                Anuncia a colheita em dois minutos, escolhe se é venda ou doação e combina a
+                retirada direto com quem vai buscar. Sem atravessador mandando no preço.
+              </p>
+              <a class="publico-link" href="publicar.html">Publicar uma safra</a>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="publico publico-broto">
+              <span class="publico-icone">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m3 7 2-4h14l2 4"/><path d="M4 7v13h16V7"/><path d="M4 7h16"/><path d="M9.5 20v-6h5v6"/>
+                </svg>
+              </span>
+              <h3>Comércio de bairro</h3>
+              <p>
+                Mercadinho, quitanda e feirante compram direto do sítio mais perto, com produto
+                colhido na semana e frete que cabe no preço.
+              </p>
+              <a class="publico-link" href="catalogo.html">Ver ofertas de venda</a>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="publico publico-laranja">
+              <span class="publico-icone">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                </svg>
+              </span>
+              <h3>ONG e projeto social</h3>
+              <p>
+                Vê no mapa as doações aqui perto e marca a retirada. Paga só o transporte,
+                mais nada.
+              </p>
+              <a class="publico-link" href="catalogo.html">Ver doações abertas</a>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+
+        <div class="d-lg-flex align-items-end justify-content-between gap-4 mb-4">
+          <div>
+            <h2 class="secao-titulo">Colheita para buscar nos próximos dias</h2>
+            <p class="secao-texto mb-0">
+              Já está colhido e tem prazo para ser retirado. Se ninguém buscar, essa comida se perde.
+            </p>
+          </div>
+          <a class="publico-link text-nowrap d-inline-block mt-3 mt-lg-0" href="catalogo.html">
+            Ver catálogo completo
+          </a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3" id="lista-lotes">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="secao secao-escura" id="video">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+
+          <div class="col-lg-5">
+            <p class="olho">A iniciativa</p>
+            <h2 class="secao-titulo">Conheça a AgroTech em três minutos</h2>
+            <p class="secao-texto mb-0">
+              No vídeo a gente mostra a navegação do site: como o produtor publica um lote,
+              como o comércio encontra a safra mais perto e como a instituição social pede
+              uma doação.
+            </p>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="video-caixa">
+              <iframe src="https://www.youtube.com/embed/[ID-DO-VIDEO]"
+                      title="Pitch vídeo da AgroTech"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
+            <p class="video-legenda mb-0">
+              Pitch vídeo · 3 min ·
+              <a href="[LINK DO YOUTUBE]" target="_blank" rel="noopener">assistir no YouTube</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="secao chamada">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+
+          <div class="col-lg-7">
+            <h2>Quer falar com a gente?</h2>
+            <p class="mb-0">
+              Se você produz, revende ou coordena um projeto social, escreva para a equipe:
+              é a conversa com quem está na ponta que decide o que entra na plataforma.
+            </p>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="d-grid d-sm-flex gap-3 justify-content-lg-end">
+              <a class="botao botao-verde botao-grande" href="contato.html">Fale conosco</a>
+              <a class="botao botao-branco botao-grande" href="sobre.html">Sobre nós</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container py-5">
+      <div class="row g-4">
+
+        <div class="col-lg-6">
+          <a class="rodape-marca" href="index.html">AgroTech</a>
+          <p class="rodape-sobre mt-3 mb-0">
+            Marketplace de safras entre vizinhos e hub de doação de alimentos.
+            Uma iniciativa Brasil A&amp;T alinhada às metas 2.1 e 2.3 do ODS 2 da ONU.
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3>Plataforma</h3>
+          <ul class="list-unstyled mb-0">
+            <li><a href="catalogo.html">Catálogo de safras</a></li>
+            <li><a href="publicar.html">Área do produtor</a></li>
+            <li><a href="#video">Pitch vídeo</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3>Institucional</h3>
+          <ul class="list-unstyled mb-0">
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="contato.html">Fale conosco</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="rodape-base py-3 mb-0">© <span id="ano">2026</span> Brasil A&amp;T · Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

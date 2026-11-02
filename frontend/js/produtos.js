@@ -1,0 +1,62 @@
+export const produtos = [
+  {
+    id: 'TM-4417',
+    nome: 'Tomate italiano',
+    tipo: 'venda',
+    produtor: 'Sítio Boa Vista',
+    cidade: 'Ibiúna-SP',
+    distancia: 18,
+    quantidade: '180 kg disponíveis',
+    embalagem: 'caixa de 20 kg',
+    preco: 'R$ 2,40 /kg',
+    prazo: 'Colhido há 2 dias · retirar até 27/10',
+    urgente: false,
+    foto: 'img/lote-tomate.jpg',
+    alt: 'Caixa de tomates italianos recém-colhidos'
+  },
+  {
+    id: 'MF-2210',
+    nome: 'Mix de folhas e legumes',
+    tipo: 'doacao',
+    produtor: 'Chácara São João',
+    cidade: 'Cotia-SP',
+    distancia: 9,
+    quantidade: '60 kg disponíveis',
+    embalagem: 'fora do padrão de tamanho',
+    preco: 'Doação · retirada por conta da ONG',
+    prazo: 'Retirar até 25/10 — prazo curto',
+    urgente: true,
+    foto: 'img/lote-folhas.jpg',
+    alt: 'Mix de folhas verdes e legumes em caixas de feira'
+  },
+  {
+    id: 'LP-9033',
+    nome: 'Laranja pera',
+    tipo: 'venda',
+    produtor: 'Pomar Santa Rita',
+    cidade: 'Itapetininga-SP',
+    distancia: 42,
+    quantidade: '320 kg disponíveis',
+    embalagem: 'sacaria de 25 kg',
+    preco: 'R$ 1,15 /kg',
+    prazo: 'Colhido ontem · retirar até 30/10',
+    urgente: false,
+    foto: 'img/lote-laranja.jpg',
+    alt: 'Laranjas pera colhidas, em sacaria no pomar'
+  },
+  {
+    id: 'CN-5582',
+    nome: 'Cenoura',
+    tipo: 'doacao',
+    produtor: 'Sítio Três Irmãos',
+    cidade: 'Piedade-SP',
+    distancia: 31,
+    quantidade: '140 kg disponíveis',
+    embalagem: 'calibre pequeno',
+    preco: 'Doação · retirada por conta da ONG',
+    prazo: 'Colhido há 3 dias · retirar até 26/10',
+    urgente: false,
+    foto: 'img/lote-raiz.jpg',
+    alt: 'Cenouras lavadas separadas em caixas após a colheita'
+  }
+];
