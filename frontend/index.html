@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Início — AgroTech</title>
-  <meta name="description" content="A AgroTech liga quem planta a mercadinhos e ONGs aqui perto: venda direta sem atravessador e doação de alimentos sem taxa.">
+  <meta name="description" content="A AgroTech liga o pequeno produtor a mercadinhos e ONGs da mesma região: venda direta sem atravessador e doação de alimentos sem taxa.">
   <meta name="theme-color" content="#1E5128">
 
   <link rel="icon" href="assets/identidade/favicon.svg" type="image/svg+xml">
@@ -33,7 +33,7 @@
           </span>
         </a>
 
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#menu" aria-controls="menu" aria-label="Abrir o menu">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -74,22 +74,22 @@
                stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>
           </svg>
-          Só aparece quem está a até 50 km de você
+          Entregas em até 50 km
         </p>
 
         <h1 class="mb-3">Do campo direto ao comércio do seu bairro</h1>
 
         <p class="capa-texto mb-4">
-          A AgroTech liga quem planta a mercadinhos e ONGs aqui perto. Sem atravessador,
-          com frete curto e com destino certo para a colheita que hoje se perde no galpão.
+          A AgroTech liga o pequeno produtor a mercadinhos e ONGs da mesma região.
+          Sem atravessador e com destino certo para a safra.
         </p>
 
-        <div class="d-grid d-sm-flex gap-3 mb-4">
+        <div class="d-grid d-sm-flex gap-3">
           <a class="botao botao-branco botao-grande" href="catalogo.html">Ver safras disponíveis</a>
           <a class="botao botao-vazado botao-grande" href="publicar.html">Sou produtor, quero anunciar</a>
         </div>
 
-        <p class="capa-aviso mb-0">
+        <p class="capa-aviso d-none d-md-block mt-4 mb-0">
           Doar não custa nada, em etapa nenhuma. Esse é o nosso compromisso com quem alimenta pessoas.
         </p>
       </div>
@@ -97,21 +97,21 @@
 
     <section class="numeros" aria-label="O tamanho do problema">
       <div class="container">
-        <div class="numeros-container d-lg-flex">
+        <div class="numeros-container revela">
 
-          <div class="numero flex-fill">
-            <span class="numero-valor">77%</span>
+          <div class="numero">
+            <span class="numero-valor numero-verde">77%</span>
             <p>dos estabelecimentos agropecuários do Brasil são de agricultura familiar</p>
             <cite>IBGE · Censo Agropecuário 2017</cite>
           </div>
 
-          <div class="numero flex-fill">
+          <div class="numero">
             <span class="numero-valor numero-laranja">40 a 50%</span>
-            <p>das frutas e hortaliças se perdem antes de chegar à mesa do consumidor</p>
+            <p>das frutas e hortaliças se perdem antes de chegar à mesa</p>
             <cite>FAO · perdas e desperdício de alimentos</cite>
           </div>
 
-          <div class="numero flex-fill">
+          <div class="numero d-none d-md-block">
             <span class="numero-valor numero-verde">R$ 0,00</span>
             <p>é o custo do módulo de doação para instituições sociais cadastradas</p>
             <cite>Compromisso AgroTech · ODS 2.1</cite>
@@ -124,14 +124,14 @@
     <section class="secao-clara">
       <div class="container">
 
-        <h2 class="secao-titulo">Três lados que hoje não se encontram</h2>
-        <p class="secao-texto mb-4">
+        <h2 class="secao-titulo">Três pontas, uma plataforma</h2>
+        <p class="secao-texto d-none d-md-block mb-4">
           Cada um entra com o que já tem e resolve o problema do outro: quem planta vende a
           colheita, quem revende compra fresco e perto, e quem alimenta pessoas recebe o que
           sobrou, de graça.
         </p>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+        <div class="row row-cols-1 row-cols-md-3 g-3 revela">
 
           <div class="col">
             <article class="publico">
@@ -143,12 +143,11 @@
                   <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/>
                 </svg>
               </span>
-              <h3>Pequeno produtor</h3>
-              <p>
-                Anuncia a colheita em dois minutos, escolhe se é venda ou doação e combina a
-                retirada direto com quem vai buscar. Sem atravessador mandando no preço.
-              </p>
-              <a class="publico-link" href="publicar.html">Publicar uma safra</a>
+              <div class="publico-texto">
+                <h3>Pequeno produtor</h3>
+                <p>Publica o lote em dois minutos e combina a retirada direto com quem busca.</p>
+                <a class="publico-link d-none d-md-inline-block" href="publicar.html">Publicar uma safra</a>
+              </div>
             </article>
           </div>
 
@@ -160,12 +159,11 @@
                   <path d="m3 7 2-4h14l2 4"/><path d="M4 7v13h16V7"/><path d="M4 7h16"/><path d="M9.5 20v-6h5v6"/>
                 </svg>
               </span>
-              <h3>Comércio de bairro</h3>
-              <p>
-                Mercadinho, quitanda e feirante compram direto do sítio mais perto, com produto
-                colhido na semana e frete que cabe no preço.
-              </p>
-              <a class="publico-link" href="catalogo.html">Ver ofertas de venda</a>
+              <div class="publico-texto">
+                <h3>Comércio de bairro</h3>
+                <p>Compra fresco da lavoura mais próxima, com frete que cabe no preço.</p>
+                <a class="publico-link d-none d-md-inline-block" href="catalogo.html">Ver ofertas de venda</a>
+              </div>
             </article>
           </div>
 
@@ -177,12 +175,11 @@
                   <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
                 </svg>
               </span>
-              <h3>ONG e projeto social</h3>
-              <p>
-                Vê no mapa as doações aqui perto e marca a retirada. Paga só o transporte,
-                mais nada.
-              </p>
-              <a class="publico-link" href="catalogo.html">Ver doações abertas</a>
+              <div class="publico-texto">
+                <h3>ONG e projeto social</h3>
+                <p>Vê as doações abertas por perto e agenda a retirada, sem taxa nenhuma.</p>
+                <a class="publico-link d-none d-md-inline-block" href="catalogo.html">Ver doações abertas</a>
+              </div>
             </article>
           </div>
 
@@ -195,18 +192,19 @@
 
         <div class="d-lg-flex align-items-end justify-content-between gap-4 mb-4">
           <div>
-            <h2 class="secao-titulo">Colheita para buscar nos próximos dias</h2>
-            <p class="secao-texto mb-0">
-              Já está colhido e tem prazo para ser retirado. Se ninguém buscar, essa comida se perde.
-            </p>
+            <h2 class="secao-titulo">Retirada nos próximos dias</h2>
+            <p class="secao-texto mb-0">Lotes já colhidos, com data limite para buscar.</p>
           </div>
-          <a class="publico-link text-nowrap d-inline-block mt-3 mt-lg-0" href="catalogo.html">
+          <a class="publico-link text-nowrap d-none d-lg-inline-block" href="catalogo.html">
             Ver catálogo completo
           </a>
         </div>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3" id="lista-lotes">
-        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3" id="lista-lotes"></div>
+
+        <p class="mt-4 mb-0 d-lg-none">
+          <a class="publico-link" href="catalogo.html">Ver catálogo completo</a>
+        </p>
 
       </div>
     </section>
@@ -217,15 +215,14 @@
 
           <div class="col-lg-5">
             <p class="rotulo">A iniciativa</p>
-            <h2 class="secao-titulo">Conheça a AgroTech em três minutos</h2>
+            <h2 class="secao-titulo">Por que começamos pela logística</h2>
             <p class="secao-texto mb-0">
-              No vídeo a gente mostra a navegação do site: como o produtor publica um lote,
-              como o comércio encontra a safra mais perto e como a instituição social pede
-              uma doação.
+              Três minutos mostrando de onde veio a AgroTech e como a plataforma funciona
+              para o produtor, para o comércio e para a instituição social.
             </p>
           </div>
 
-          <div class="col-lg-7">
+          <div class="col-lg-7 revela">
             <div class="video-container">
               <iframe src="https://www.youtube.com/embed/[ID-DO-VIDEO]"
                       title="Pitch vídeo da AgroTech"
@@ -242,7 +239,7 @@
       </div>
     </section>
 
-    <section class="fale-conosco">
+    <section class="fale-conosco d-none d-md-block">
       <div class="container">
         <div class="row g-4 align-items-center">
 
@@ -268,12 +265,12 @@
   </main>
 
   <footer>
-    <div class="container py-5">
+    <div class="container py-4 py-lg-5">
       <div class="row g-4">
 
         <div class="col-lg-6">
           <a class="marca-texto" href="index.html">AgroTech</a>
-          <p class="descricao mt-3 mb-0">
+          <p class="descricao d-none d-md-block mt-3 mb-0">
             Marketplace de safras entre vizinhos e hub de doação de alimentos.
             Uma iniciativa Brasil A&amp;T alinhada às metas 2.1 e 2.3 do ODS 2 da ONU.
           </p>
