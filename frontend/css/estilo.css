@@ -50,6 +50,9 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
+.campo-upload { min-height: 7.6rem; }
+.campo-upload::file-selector-button { min-height: 5rem; }
+
 .pular {
   position: absolute;
   left: 50%;
