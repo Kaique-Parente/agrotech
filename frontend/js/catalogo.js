@@ -1,22 +1,19 @@
 import { montarCards } from './cards.js';
 import { produtos } from './produtos.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const containerDoacoes = document.getElementById('container-doacoes');
-  const containerVendas = document.getElementById('container-vendas');
+const doacoes = produtos.filter(function (produto) { return produto.tipo === 'doacao'; });
+const vendas = produtos.filter(function (produto) { return produto.tipo === 'venda'; });
 
-  if (produtos && Array.isArray(produtos)) {
-    // Filtra garantindo que apanha 'doacao' exatamente como está no produtos.js
-    const doacoes = produtos.filter(p => p.tipo === 'doacao' || p.tipo === 'doação');
-    const vendas = produtos.filter(p => p.tipo === 'venda');
+montarCards(doacoes, document.querySelector('#container-doacoes'));
+montarCards(vendas, document.querySelector('#container-vendas'));
 
-    // Injeta os cards gerados nas divs correspondentes
-    if (containerDoacoes) {
-      montarCards(doacoes, containerDoacoes);
-    }
-    
-    if (containerVendas) {
-      montarCards(vendas, containerVendas);
-    }
-  }
-});
+const resumo = document.querySelector('#resumo-lotes');
+if (resumo) {
+  const plural = function (n, um, muitos) { return n + ' ' + (n === 1 ? um : muitos); };
+  resumo.textContent = plural(produtos.length, 'lote disponível', 'lotes disponíveis')
+    + ' · ' + plural(doacoes.length, 'doação', 'doações')
+    + ' e ' + plural(vendas.length, 'oferta de venda', 'ofertas de venda');
+}
+
+const ano = document.querySelector('#ano');
+if (ano) { ano.textContent = new Date().getFullYear(); }
