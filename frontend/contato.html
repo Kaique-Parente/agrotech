@@ -45,7 +45,7 @@
           </div>
 
           <div class="offcanvas-body">
-            <ul class="navbar-nav gap-lg-4 ms-lg-auto mb-3 mb-lg-0">
+            <ul class="navbar-nav gap-lg-4 mx-lg-auto mb-3 mb-lg-0">
               <li class="nav-item"><a class="menu-link" href="index.html">Início</a></li>
               <li class="nav-item"><a class="menu-link" href="catalogo.html">Catálogo de safras</a></li>
               <li class="nav-item"><a class="menu-link" href="publicar.html">Área do produtor</a></li>
@@ -63,28 +63,30 @@
 
   <main id="conteudo">
     <!-- Título da Página -->
-    <section class="secao-clara pb-0">
+    <section class="secao-clara pt-4 pb-4 pt-lg-5">
       <div class="container">
         <h1 class="secao-titulo">Fale conosco</h1>
-        <p class="secao-texto mb-5">
+        <p class="secao-texto mb-0">
           Se você tem dúvidas, sugestões ou deseja fazer uma parceria, preencha o formulário abaixo ou utilize nossos canais de atendimento.
         </p>
       </div>
     </section>
 
     <!-- Área de Contato -->
-    <section class="py-5" style="background-color: var(--fundo); border-top: 1px solid var(--linha);">
+    <section class="py-4 py-lg-5" style="background-color: var(--fundo); border-top: 1px solid var(--linha);">
       <div class="container">
         <div class="row g-4 align-items-start">
           
           <!-- Formulário -->
           <div class="col-lg-8">
-            <div class="bg-white border rounded-4 shadow-sm p-4 p-md-5">
+            <div class="bg-white border rounded shadow-sm p-4 p-md-5">
+              <p class="legenda-form mb-3">Os campos marcados com <span class="obrigatorio">*</span> são obrigatórios.</p>
+
               <form class="row g-4" action="#" method="POST">
                 
                 <div class="col-12">
-                  <label class="form-label fw-bold" for="perfil">Quem é você ou sua empresa?</label>
-                  <select class="form-select" id="perfil" required>
+                  <label class="form-label fw-bold" for="perfil">Quem é você ou sua empresa? <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <select class="form-select" id="perfil" name="perfil" required>
                     <option value="" selected disabled>Selecione uma opção</option>
                     <option value="produtor">Pequeno produtor</option>
                     <option value="comercio">Comércio de bairro</option>
@@ -94,49 +96,53 @@
                 </div>
 
                 <div class="col-md-6">
-                  <label class="form-label fw-bold" for="nome">Nome completo</label>
-                  <input class="form-control" type="text" id="nome" placeholder="Seu nome completo" required>
+                  <label class="form-label fw-bold" for="nome">Nome completo <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input class="form-control" type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
                 </div>
 
                 <div class="col-md-6">
-                  <label class="form-label fw-bold" for="email">E-mail de contato</label>
-                  <input class="form-control" type="email" id="email" placeholder="seu@email.com" required>
+                  <label class="form-label fw-bold" for="email">E-mail de contato <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input class="form-control" type="email" id="email" name="email" placeholder="seu@email.com" required>
                 </div>
 
                 <div class="col-md-6">
-                  <label class="form-label fw-bold" for="whatsapp">Telefone / WhatsApp</label>
-                  <input class="form-control" type="tel" id="whatsapp" placeholder="(00) 00000-0000" required>
+                  <label class="form-label fw-bold" for="whatsapp">Telefone / WhatsApp <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input class="form-control" type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" inputmode="numeric" maxlength="15" pattern="\(\d{2}\) \d{4,5}-\d{4}" required>
                 </div>
 
                 <div class="col-md-6">
-                  <label class="form-label fw-bold" for="cidade">Município / UF</label>
-                  <input class="form-control" type="text" id="cidade" placeholder="Sua cidade e estado" required>
+                  <label class="form-label fw-bold" for="cidade">Município / UF <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input class="form-control" type="text" id="cidade" name="cidade" placeholder="Sua cidade e estado" required>
                 </div>
 
                 <div class="col-12">
-                  <label class="form-label fw-bold" for="assunto">Assunto</label>
-                  <input class="form-control" type="text" id="assunto" placeholder="Sobre o que você quer falar?" required>
+                  <label class="form-label fw-bold" for="assunto">Assunto <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input class="form-control" type="text" id="assunto" name="assunto" placeholder="Sobre o que você quer falar?" required>
                 </div>
 
                 <div class="col-12">
-                  <label class="form-label fw-bold" for="mensagem">Mensagem</label>
-                  <textarea class="form-control" id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                  <label class="form-label fw-bold" for="mensagem">Mensagem <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
                 </div>
 
                 <div class="col-12">
-                  <label class="form-label fw-bold" for="anexo">Anexo (opcional)</label>
-                  <div class="border rounded-3 p-4 text-center bg-light" style="border-style: dashed !important;">
-                    <svg class="mb-2 text-body-secondary" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
-                    <p class="small text-body-secondary mb-3">Clique para selecionar ou arraste um arquivo até aqui (PDF, PNG ou JPG até 5MB)</p>
-                    <input class="form-control campo-upload" type="file" id="anexo" accept=".pdf,.png,.jpg,.jpeg">
+                  <p class="form-label fw-bold mb-2">Anexo (opcional)</p>
+                  <div class="area-anexo">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+                    <p>Envie um PDF, PNG ou JPG de até 5 MB.</p>
+                    <div class="campo-arquivo">
+                      <input type="file" id="anexo" name="anexo" accept=".pdf,.png,.jpg,.jpeg">
+                      <label class="botao botao-branco" for="anexo">Escolher arquivo</label>
+                      <span class="campo-arquivo-nome" id="nome-anexo">Nenhum arquivo selecionado</span>
+                    </div>
                   </div>
                 </div>
 
                 <div class="col-12">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="consentimento" required>
+                    <input class="form-check-input" type="checkbox" id="consentimento" name="consentimento" required>
                     <label class="form-check-label small text-body-secondary" for="consentimento">
-                      Concordo com o uso dos meus dados para que a equipe AgroTech entre em contato comigo, de acordo com a Política de Privacidade.
+                      Concordo com o uso dos meus dados para que a equipe AgroTech entre em contato comigo, de acordo com a Política de Privacidade. <span class="obrigatorio" aria-hidden="true">*</span>
                     </label>
                   </div>
                 </div>
@@ -155,7 +161,7 @@
             <div class="d-grid gap-4">
               
               <!-- Card: Canais -->
-              <div class="card border-0 shadow-sm rounded-4">
+              <div class="card border-0 shadow-sm rounded">
                 <div class="card-body p-4">
                   <h2 class="h5 fw-bold mb-3">Canais de atendimento</h2>
                   <p class="small text-body-secondary mb-4">
@@ -166,16 +172,16 @@
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                       atendimento@agrotech.com.br
                     </a>
-                    <a href="https://wa.me/5511987654321" class="d-flex align-items-center gap-2 text-decoration-none py-2">
+                    <a href="https://wa.me/5511900000000" class="d-flex align-items-center gap-2 text-decoration-none py-2">
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                      (11) 98765-4321
+                      (11) 90000-0000
                     </a>
                   </div>
                 </div>
               </div>
 
               <!-- Card: FAQ -->
-              <div class="card border-0 shadow-sm rounded-4">
+              <div class="card border-0 shadow-sm rounded">
                 <div class="card-body p-4">
                   <h2 class="h5 fw-bold mb-3">Dúvidas frequentes</h2>
                   <p class="small text-body-secondary mb-3">
@@ -189,7 +195,7 @@
               </div>
 
               <!-- Box Destaque -->
-              <div class="p-4 rounded-4" style="background-color: var(--creme); border: 1px solid var(--linha);">
+              <div class="p-4 rounded" style="background-color: var(--creme); border: 1px solid var(--linha);">
                 <h2 class="h5 fw-bold mb-2">Compromisso com o impacto</h2>
                 <p class="small text-body-secondary mb-0">
                   Sua mensagem é essencial para melhorarmos a plataforma. Respondemos em até 48 horas úteis para garantir o melhor suporte ao campo e à mesa.
@@ -237,6 +243,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/contato.js"></script>
 </body>
 </html>
