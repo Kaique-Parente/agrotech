@@ -72,3 +72,17 @@ doacaoSocial.addEventListener('change', () => {
 });
 
 atualizarModeloComercial();
+
+const imagemProduto = document.getElementById('imagemProduto');
+const nomeImagem = document.getElementById('nome-imagem');
+
+if (imagemProduto && nomeImagem) {
+  imagemProduto.addEventListener('change', () => {
+    nomeImagem.textContent = imagemProduto.files.length
+      ? imagemProduto.files[0].name
+      : 'Nenhum arquivo selecionado';
+  });
+}
+
+const anoPublicar = document.getElementById('ano');
+if (anoPublicar) { anoPublicar.textContent = new Date().getFullYear(); }
