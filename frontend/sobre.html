@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre nós — AgroTech</title>
+  <meta name="description" content="A AgroTech é uma iniciativa da Brasil A&T que liga o pequeno produtor a mercadinhos e ONGs da mesma região, alinhada às metas 2.1 e 2.3 do ODS 2 da ONU.">
+  <meta name="theme-color" content="#1E5128">
+
+  <link rel="icon" href="assets/identidade/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Public+Sans:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg py-2" aria-label="Navegação principal">
+      <div class="container">
+
+        <a class="marca" href="index.html">
+          <img class="marca-icone" src="assets/identidade/marca-agrotech-branco.svg" alt="">
+          <span>
+            <span class="marca-nome d-block">AgroTech</span>
+            <span class="marca-sub">por Brasil A&amp;T</span>
+          </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#menu" aria-controls="menu" aria-label="Abrir o menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="menu" aria-labelledby="menu-titulo">
+          <div class="offcanvas-header border-bottom">
+            <h2 class="offcanvas-title marca-nome mb-0" id="menu-titulo">AgroTech</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar o menu"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav gap-lg-4 mx-lg-auto mb-3 mb-lg-0">
+              <li class="nav-item"><a class="menu-link" href="index.html">Início</a></li>
+              <li class="nav-item"><a class="menu-link" href="catalogo.html">Catálogo de safras</a></li>
+              <li class="nav-item"><a class="menu-link" href="publicar.html">Área do produtor</a></li>
+              <li class="nav-item"><a class="menu-link ativo" href="sobre.html" aria-current="page">Sobre nós</a></li>
+              <li class="nav-item"><a class="menu-link" href="contato.html">Fale conosco</a></li>
+            </ul>
+
+            <a class="botao botao-verde botao-menu" href="publicar.html">Publicar um lote</a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Capa -->
+    <section class="sobre-capa">
+      <img class="sobre-capa-foto" src="assets/campo.jpg"
+           alt="Plantação de trigo ao entardecer, com um agricultor ao fundo">
+      <div class="sobre-capa-overlay"></div>
+
+      <div class="container sobre-capa-conteudo">
+        <p class="sobre-rotulo sobre-rotulo-claro mb-3">Sobre a AgroTech</p>
+        <h1>Tecnologia simples para um problema antigo do campo</h1>
+        <p class="sobre-capa-texto d-none d-md-block mb-0">
+          Somos uma iniciativa da Brasil A&amp;T. Construímos a plataforma a partir de uma
+          pergunta prática: por que tanto alimento bom se perde a poucos quilômetros de
+          quem precisa dele?
+        </p>
+        <p class="sobre-capa-texto d-md-none mb-0">
+          Uma iniciativa da Brasil A&amp;T, construída a partir de uma pergunta prática: por que tanto
+          alimento bom se perde a poucos quilômetros de quem precisa dele?
+        </p>
+      </div>
+    </section>
+
+    <!-- O problema -->
+    <section class="sobre-secao">
+      <div class="container">
+        <div class="sobre-problema">
+
+          <h2 class="secao-titulo">O problema que escolhemos resolver</h2>
+
+          <div>
+            <p class="sobre-paragrafo">
+              O pequeno produtor colhe, mas nem sempre consegue escoar. Quando o preço cai ou o frete
+              custa mais que a carga, a safra fica no galpão. Do outro lado da mesma estrada,
+              mercadinhos compram caro de distribuidores grandes e instituições sociais não
+              encontram alimento fresco.
+            </p>
+            <p class="sobre-paragrafo d-none d-md-block">
+              A AgroTech não tenta reinventar o agronegócio. Ela resolve o encontro: mostra, em um
+              raio de poucos quilômetros, quem tem lote disponível hoje e quem precisa dele — para
+              comprar ou para receber como doação.
+            </p>
+            <p class="sobre-paragrafo d-md-none">
+              A AgroTech resolve o encontro: mostra, em um raio de poucos quilômetros, quem tem lote
+              disponível hoje e quem precisa dele.
+            </p>
+
+            <div class="sobre-divisor">
+              <div>
+                <h3 class="sobre-mini">Missão</h3>
+                <p class="sobre-mini-texto">
+                  Evitar que comida boa se perca no caminho entre a roça e a mesa, com tecnologia simples e barata.
+                </p>
+              </div>
+              <div>
+                <h3 class="sobre-mini">Visão</h3>
+                <p class="sobre-mini-texto">
+                  Ligar o campo e a cidade de um jeito justo para quem planta, para quem vende e para quem precisa de comida.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona + valores -->
+    <section class="sobre-secao sobre-secao-clara">
+      <div class="container">
+        <h2 class="secao-titulo sobre-espaco">Como funciona, na prática</h2>
+
+        <ol class="sobre-passos">
+          <li class="sobre-passo">
+            <span class="sobre-passo-num" aria-hidden="true">1</span>
+            <h3>O produtor publica o lote</h3>
+            <p>
+              <span class="d-none d-md-inline">Produto, quantidade, prazo de retirada e o destino: venda para comércios ou doação para instituições. Com conta verificada, leva dois minutos.</span>
+              <span class="d-md-none">Produto, quantidade, prazo de retirada e o destino: venda ou doação.</span>
+            </p>
+          </li>
+          <li class="sobre-passo">
+            <span class="sobre-passo-num" aria-hidden="true">2</span>
+            <h3>Quem está por perto encontra</h3>
+            <p>
+              <span class="d-none d-md-inline">O catálogo mostra primeiro o que está mais perto e com prazo mais curto. Doações ficam visíveis apenas para instituições já verificadas.</span>
+              <span class="d-md-none">O catálogo mostra primeiro o que está mais perto e com prazo mais curto.</span>
+            </p>
+          </li>
+          <li class="sobre-passo">
+            <span class="sobre-passo-num" aria-hidden="true">3</span>
+            <h3>A retirada é combinada direto</h3>
+            <p>
+              <span class="d-none d-md-inline">As duas partes conversam pela plataforma, marcam dia e hora no sítio e acertam o pagamento entre si. Não entramos no meio da negociação.</span>
+              <span class="d-md-none">As duas partes marcam dia e hora no sítio e acertam o pagamento entre si.</span>
+            </p>
+          </li>
+        </ol>
+
+        <h2 class="secao-titulo sobre-espaco sobre-espaco-valores">No que a gente acredita</h2>
+
+        <div class="valores" id="valores" aria-roledescription="carrossel" aria-label="Nossos valores">
+          <div class="valores-foto">
+            <img id="valores-foto" src="assets/valor-1.jpg" alt="">
+          </div>
+
+          <div class="valores-corpo">
+            <div class="valores-bloco-texto">
+              <p class="valores-contador" id="valores-contador">Valor 1 de 4</p>
+              <h3 class="valores-titulo" id="valores-titulo"></h3>
+              <p class="valores-texto" id="valores-texto"></p>
+            </div>
+
+            <div class="valores-controles">
+              <div class="valores-pontos" role="group" aria-label="Escolher valor">
+                <button type="button" class="valores-ponto" data-valor="0" aria-label="Valor 1">1</button>
+                <button type="button" class="valores-ponto" data-valor="1" aria-label="Valor 2">2</button>
+                <button type="button" class="valores-ponto" data-valor="2" aria-label="Valor 3">3</button>
+                <button type="button" class="valores-ponto" data-valor="3" aria-label="Valor 4">4</button>
+              </div>
+
+              <div class="valores-setas">
+                <button type="button" class="valores-seta" id="valores-anterior" aria-label="Valor anterior">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button type="button" class="valores-seta" id="valores-proximo" aria-label="Próximo valor">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ODS 2 -->
+    <section class="sobre-secao">
+      <div class="container">
+        <p class="sobre-rotulo sobre-rotulo-laranja mb-2">Nosso compromisso</p>
+        <h2 class="secao-titulo">Duas metas da ONU guiam o que a gente faz</h2>
+        <p class="sobre-intro">
+          Fome Zero e Agricultura Sustentável é o objetivo número 2 da ONU, e a gente assumiu ele.
+          Se uma ideia não ajuda nessas duas metas, ela não entra no site.
+        </p>
+
+        <div class="sobre-meta sobre-meta-laranja">
+          <div class="sobre-meta-num">
+            <span>2.1</span>
+            <small>Meta da ONU</small>
+          </div>
+          <div>
+            <h3>Comida boa na mesa de quem precisa</h3>
+            <p>
+              O que sobra na lavoura vai para as ONGs daqui perto em vez de estragar. De graça para
+              o agricultor e de graça para a instituição.
+            </p>
+          </div>
+        </div>
+
+        <div class="sobre-meta sobre-meta-verde">
+          <div class="sobre-meta-num">
+            <span>2.3</span>
+            <small>Meta da ONU</small>
+          </div>
+          <div>
+            <h3>Mais dinheiro no bolso de quem planta</h3>
+            <p>
+              Sem atravessador no meio, quem plantou põe o próprio preço, conversa direto com o
+              comprador e fica com o dinheiro da venda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sustentação -->
+    <section class="sobre-secao sobre-secao-clara">
+      <div class="container">
+        <h2 class="secao-titulo">Como a AgroTech se sustenta</h2>
+        <p class="sobre-intro">
+          Quem usa o site sabe de onde vem o nosso dinheiro — e onde ele nunca vai entrar.
+        </p>
+
+        <div class="sobre-cards">
+
+          <article class="sobre-card">
+            <span class="sobre-icone sobre-icone-laranja">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+              </svg>
+            </span>
+            <div>
+              <h3>Doação sem taxa</h3>
+              <p>
+                <span class="d-none d-md-inline">Nenhuma cobrança sobre lotes doados, em etapa nenhuma, para nenhuma das partes.</span>
+                <span class="d-md-none">Nenhuma cobrança sobre lotes doados, em etapa nenhuma.</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="sobre-card">
+            <span class="sobre-icone sobre-icone-verde">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m3 7 2-4h14l2 4"/><path d="M4 7v13h16V7"/><path d="M4 7h16"/><path d="M9.5 20v-6h5v6"/>
+              </svg>
+            </span>
+            <div>
+              <h3>Venda sem comissão</h3>
+              <p>Quem planta põe o preço e fica com todo o dinheiro da venda.</p>
+            </div>
+          </article>
+
+          <article class="sobre-card">
+            <span class="sobre-icone sobre-icone-verde">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
+              </svg>
+            </span>
+            <div>
+              <h3>Anúncio em destaque</h3>
+              <p>Só paga quem quiser aparecer no topo do catálogo. É daí que vem o nosso dinheiro.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="sobre-secao" id="perguntas-frequentes">
+      <div class="container">
+        <h2 class="secao-titulo">Perguntas frequentes</h2>
+        <p class="sobre-intro d-none d-md-block">
+          Se a sua dúvida não estiver aqui, escreva para a equipe pelo
+          <a class="sobre-link" href="contato.html">formulário de contato</a>.
+        </p>
+
+        <div class="faq" id="faq">
+
+          <div class="faq-item">
+            <h3 class="faq-pergunta">
+              <button class="faq-botao" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq-1" aria-expanded="true" aria-controls="faq-1">
+                <span>
+                  <span class="d-none d-md-inline">Como funciona a doação de alimentos a R$ 0,00?</span>
+                  <span class="d-md-none">Como funciona a doação a R$ 0,00?</span>
+                </span>
+              </button>
+            </h3>
+            <div id="faq-1" class="collapse show" data-bs-parent="#faq">
+              <p class="faq-resposta">
+                <span class="d-none d-md-inline">O produtor marca o lote como doação na hora de publicar. Instituições já verificadas veem esse lote no mapa, pedem a reserva e combinam a retirada direto com o produtor. A plataforma não cobra nada em nenhuma etapa; a instituição arca apenas com o transporte.</span>
+                <span class="d-md-none">O produtor marca o lote como doação. Instituições verificadas veem o lote, pedem a reserva e combinam a retirada direto. A plataforma não cobra nada; a instituição arca apenas com o transporte.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-pergunta">
+              <button class="faq-botao collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
+                <span>
+                  <span class="d-none d-md-inline">Quem pode comprar os lotes anunciados?</span>
+                  <span class="d-md-none">Quem pode comprar os lotes?</span>
+                </span>
+              </button>
+            </h3>
+            <div id="faq-2" class="collapse" data-bs-parent="#faq">
+              <p class="faq-resposta">
+                Comércios da região, como mercadinhos, quitandas e feirantes, a até 50 km do produtor.
+                Os lotes de doação ficam disponíveis apenas para instituições sociais verificadas.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-pergunta">
+              <button class="faq-botao collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">
+                <span>
+                  <span class="d-none d-md-inline">O produtor paga alguma taxa para anunciar?</span>
+                  <span class="d-md-none">O produtor paga para anunciar?</span>
+                </span>
+              </button>
+            </h3>
+            <div id="faq-3" class="collapse" data-bs-parent="#faq">
+              <p class="faq-resposta">
+                Não. Publicar é de graça, a doação não tem taxa e a venda não tem comissão. A plataforma
+                só cobra de quem quiser aparecer em destaque no topo do catálogo.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-pergunta">
+              <button class="faq-botao collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">
+                <span>
+                  <span class="d-none d-md-inline">Quem organiza o transporte da retirada?</span>
+                  <span class="d-md-none">Quem organiza o transporte?</span>
+                </span>
+              </button>
+            </h3>
+            <div id="faq-4" class="collapse" data-bs-parent="#faq">
+              <p class="faq-resposta">
+                Quem busca. O comprador ou a instituição combina dia e hora direto com o produtor e cuida
+                do frete. Quando o produtor oferece entrega, isso aparece no anúncio.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item d-none d-md-block">
+            <h3 class="faq-pergunta">
+              <button class="faq-botao collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5">
+                <span>Como a plataforma verifica as instituições sociais?</span>
+              </button>
+            </h3>
+            <div id="faq-5" class="collapse" data-bs-parent="#faq">
+              <p class="faq-resposta">
+                A instituição envia o comprovante de CNPJ e informa quantas pessoas atende. Só depois da
+                conferência pela equipe ela passa a ver as doações abertas na região.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-pergunta">
+              <button class="faq-botao collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#faq-6" aria-expanded="false" aria-controls="faq-6">
+                <span>
+                  <span class="d-none d-md-inline">Preciso de internet rápida para usar no sítio?</span>
+                  <span class="d-md-none">Preciso de internet rápida no sítio?</span>
+                </span>
+              </button>
+            </h3>
+            <div id="faq-6" class="collapse" data-bs-parent="#faq">
+              <p class="faq-resposta">
+                Não. As páginas são leves e foram pensadas para o celular. Publicar um lote leva cerca de
+                dois minutos, mesmo com sinal fraco.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Chamada final -->
+    <section class="sobre-cta">
+      <div class="container">
+        <div class="sobre-cta-grade">
+
+          <div>
+            <h2>
+              <span class="d-none d-md-inline">Fale com a gente</span>
+              <span class="d-md-none">Fale com quem está construindo</span>
+            </h2>
+            <p class="mb-0">
+              Quem vive o campo, o comércio de bairro ou um projeto social enxerga detalhes que não
+              aparecem na mesa de quem desenha. Conte o que faria diferença para você.
+            </p>
+          </div>
+
+          <div class="sobre-cta-botoes">
+            <a class="botao botao-verde botao-grande" href="contato.html">Fale conosco</a>
+            <a class="botao botao-branco botao-grande" href="catalogo.html">Ver o catálogo</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container py-4 py-lg-5">
+      <div class="row g-4">
+
+        <div class="col-lg-6">
+          <a class="marca-texto" href="index.html">AgroTech</a>
+          <p class="descricao d-none d-md-block mt-3 mb-0">
+            Marketplace de safras entre vizinhos e hub de doação de alimentos.
+            Uma iniciativa Brasil A&amp;T alinhada às metas 2.1 e 2.3 do ODS 2 da ONU.
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3>Plataforma</h3>
+          <ul class="list-unstyled mb-0">
+            <li><a href="catalogo.html">Catálogo de safras</a></li>
+            <li><a href="publicar.html">Área do produtor</a></li>
+            <li><a href="index.html#video">Pitch vídeo</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3>Institucional</h3>
+          <ul class="list-unstyled mb-0">
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="sobre.html#perguntas-frequentes">Perguntas frequentes</a></li>
+            <li><a href="contato.html">Fale conosco</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="direitos py-3 mb-0">© <span id="ano">2026</span> Brasil A&amp;T · Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script type="module" src="js/sobre.js"></script>
+</body>
+</html>
