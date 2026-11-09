@@ -99,13 +99,21 @@ Tipografia: **Archivo** (títulos e números) e **Public Sans** (textos e formul
 
 Arquivos da marca em [`docs/`](docs): SVG verde, branco e preto, além do ícone de aplicativo.
 
+## Pitch vídeo
+
+https://youtu.be/bCuzZAjxfS4
+
 ## Status
 
 Em desenvolvimento. As telas estão desenhadas e navegáveis; o back-end e a integração de mapas entram nas etapas seguintes.
 
 ## Equipe
 
-[NOMES DA EQUIPE]
+- Felipe Henrique Cruz Lopes
+- Guilherme Luigi Peruchin
+- Kaique Parente da Silva
+- Larissa de Lima Borges
+- Matheus Antônio Pereira Girelli
 
 ---
 
